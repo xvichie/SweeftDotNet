@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algos", "Algos\Algos.csproj", "{D7198A60-0956-402B-B2DB-D6198B7F5572}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "School", "School", "{BD0690CE-C943-49EF-A246-C19A2AD03AB2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolEntity", "SchoolEntity\SchoolEntity.csproj", "{7F802C34-54CB-48A7-B7CB-E6C517C0EFD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SchoolSql", "SchoolSql", "{CCECFBE3-6C24-4574-83F5-CCF6365FC6F6}"
+	ProjectSection(SolutionItems) = preProject
+		CreateDb.sql = CreateDb.sql
+		GetTeachersFromStudentNameGiorgi.sql = GetTeachersFromStudentNameGiorgi.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountriesApi", "CountriesApi\CountriesApi.csproj", "{9FD1F0AF-7EA9-4712-8060-3F5CF640D1A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphoreTask", "SemaphoreTask\SemaphoreTask.csproj", "{03D01300-1CBE-4B4D-8AC2-FE263CF2CC20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7198A60-0956-402B-B2DB-D6198B7F5572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7198A60-0956-402B-B2DB-D6198B7F5572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7198A60-0956-402B-B2DB-D6198B7F5572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7198A60-0956-402B-B2DB-D6198B7F5572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F802C34-54CB-48A7-B7CB-E6C517C0EFD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F802C34-54CB-48A7-B7CB-E6C517C0EFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F802C34-54CB-48A7-B7CB-E6C517C0EFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F802C34-54CB-48A7-B7CB-E6C517C0EFD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FD1F0AF-7EA9-4712-8060-3F5CF640D1A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD1F0AF-7EA9-4712-8060-3F5CF640D1A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD1F0AF-7EA9-4712-8060-3F5CF640D1A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD1F0AF-7EA9-4712-8060-3F5CF640D1A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03D01300-1CBE-4B4D-8AC2-FE263CF2CC20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03D01300-1CBE-4B4D-8AC2-FE263CF2CC20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03D01300-1CBE-4B4D-8AC2-FE263CF2CC20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03D01300-1CBE-4B4D-8AC2-FE263CF2CC20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F802C34-54CB-48A7-B7CB-E6C517C0EFD2} = {BD0690CE-C943-49EF-A246-C19A2AD03AB2}
+		{CCECFBE3-6C24-4574-83F5-CCF6365FC6F6} = {BD0690CE-C943-49EF-A246-C19A2AD03AB2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D13BF1EA-DECF-41FA-AFC7-F25FE5FF0ABD}
+	EndGlobalSection
+EndGlobal
