@@ -10,7 +10,7 @@ namespace CountriesApi
 {
     class Program
     {
-        private static readonly string Url = "https://restcountries.com/v3.1/all";
+        private const string Url = "https://restcountries.com/v3.1/all";
 
         public static async Task Main(string[] args)
         {
@@ -28,14 +28,12 @@ namespace CountriesApi
                     if (response.IsSuccessStatusCode)
                     {
                         string responseBody = await response.Content.ReadAsStringAsync();
-                        Console.WriteLine(responseBody);
                         List<Country> countries = JsonConvert.DeserializeObject<List<Country>>(responseBody);
 
                         string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-                        // Path to countries folder
-                        string countriesFolderPath = Path.Combine(desktopPath, "countries");
+                        string countriesFolderPath = Path.Combine(desktopPath, "Countries");
 
-                        // Check if countries folder exists, if not, create it
+
                         if (!Directory.Exists(countriesFolderPath))
                         {
                             Directory.CreateDirectory(countriesFolderPath);
@@ -58,28 +56,25 @@ namespace CountriesApi
                                     writer.WriteLine($"Area: {country.Area}");
                                 }
                             }
+                            Console.WriteLine("Files have been generated on your desktop in a folder called: Countries :)");
                         }
                         else
                         {
-                            Console.WriteLine("Failed to deserialize the response.");
+                            Console.WriteLine("Couldn't deserialize the object.");
                         }
                     }
                     else
                     {
-                        Console.WriteLine($"Failed to make request. Status code: {response.StatusCode}");
+                        Console.WriteLine($"Failed to make the request. Status code: {response.StatusCode}");
                     }
                 }
                 catch (HttpRequestException ex)
                 {
-                    Console.WriteLine($"HTTP request error: {ex.Message}");
+                    Console.WriteLine($"Http error: {ex.Message}");
                 }
-                //catch (JsonException ex)
-                //{
-                //    Console.WriteLine($"JSON parsing error: {ex.Message}");
-                //}
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"An error occurred: {ex.Message}");
+                    Console.WriteLine($"Error: {ex.Message}");
                 }
             }
         }

@@ -8,7 +8,7 @@
             int minSplitInt = 225;
             int[] notContainsArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             string properlySequnce = "(()())";
-            int countVariantsStairs = 20;
+            int countVariantsStairs = 10;
 
             Console.WriteLine("#1 sPalindrome: " + sPalindrome(palindromeString));
             Console.WriteLine("#2 minSplit: " + MinSplit(minSplitInt));
@@ -26,7 +26,8 @@
             {
                 if (text[i] != text[text.Length - i - 1])
                 {
-                    result = false; break;
+                    result = false; 
+                    break;
                 }
             }
             return result;
